@@ -24,12 +24,12 @@ class Cuba
   module Safe
     module SecureHeaders
       HEADERS = {
-        "X-Content-Type-Options" => "nosniff",
-        "X-Download-Options" => "noopen",
-        "X-Frame-Options" => "SAMEORIGIN",
-        "X-Permitted-Cross-Domain-Policies" => "none",
-        "X-XSS-Protection" => "1; mode=block",
-        "Strict-Transport-Security" => "max-age=2628000"
+        "x-content-type-options" => "nosniff",
+        "x-download-options" => "noopen",
+        "x-frame-options" => "SAMEORIGIN",
+        "x-permitted-cross-domain-policies" => "none",
+        "x-xss-protection" => "1; mode=block",
+        "strict-transport-security" => "max-age=2628000"
       }
 
       def self.setup(app)

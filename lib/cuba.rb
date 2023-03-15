@@ -10,7 +10,7 @@ class Cuba
   REGEXES = Hash.new { |h, pattern| h[pattern] = /\A\/(#{pattern})(\/|\z)/ }
 
   class Response
-    LOCATION = "Location".freeze
+    LOCATION = "location".freeze
 
     module ContentType
       HTML = "text/html".freeze        # :nodoc:
@@ -309,7 +309,7 @@ class Cuba
   #   # HTTP_ACCEPT=application/xml
   #   on accept("application/xml") do
   #     # automatically set to application/xml.
-  #     res.write res["Content-Type"]
+  #     res.write res["content-type"]
   #   end
   def accept(mimetype)
     lambda do

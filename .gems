@@ -1,5 +1,5 @@
 cutest -v 1.2.3
 tilt -v 2.1.0
-rack -v 3.0.4.1
-rack-test -v 2.0.2
+rack -v 3.0.6.1
+rack-test -v 2.1.0
 rack-session -v 2.0.0

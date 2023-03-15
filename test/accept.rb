@@ -18,7 +18,7 @@ end
 test "tests don't fail when you don't specify an accept type" do
   Cuba.define do
     on accept("application/xml") do
-      res.write res["Content-Type"]
+      res.write res["content-type"]
     end
 
     on default do
